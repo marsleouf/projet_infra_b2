@@ -1,14 +1,14 @@
-# Map
+# RoadMap
 
-### Le but c'est de crée une interface pour controlée des objets connectée et sécuritée la totaliter de c'est s'objets.
+### Le but est de créer une interface pour controler des objets connectés et sécurisé la totalité de ces mêmes objets.
 
-- Modification du serveur, apach vers nginx (fait)
-- Crée un certificat reconnu par tout les navigateurs (en cour)
-- Crée une surveillance avec les documents ... et affier sur interface Web (non fait)
-- Crée les connexions securiser vers les objets connecter en ssh (non fait).
-- Modification du site Web pour une meilleure sécuritée (en cour)
+- Modification du serveur, **Apache** vers **NGINX** (fait)
+- Créer des certificats de sécuritée reconnu par tout les navigateurs (en cours)
+- Créer une surveillance avec les documents (fournit par le messie ***IT4***)... et y lier sur interface Web (non fait)
+- Créer les connexions securisées vers les objets connectés en ssh (non fait).
+- Modification du site Web pour une meilleure sécuritée (en cours)
 
-### Le tavail est deviser
+### Le tavail répartis selon :
 
-- La sercurisation par Marius
+- La sécurisation par Marius / Quentin
 - L'interface Web par Quentin
