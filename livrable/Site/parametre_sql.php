@@ -14,10 +14,10 @@
         $BarTheme = htmlspecialchars($_POST['bartheme']);
       }
       if (isset($_POST['darkmode']) && $_POST['darkmode']) {
-        $darkMode = intval(htmlspecialchars($_POST['darkmode']));
+        $darkMode = htmlspecialchars($_POST['darkmode']);
       }
       if (isset($_POST['menudecaler']) && $_POST['menudecaler']) {
-        $Boxed = intval(htmlspecialchars($_POST['menudecaler']));
+        $Boxed = htmlspecialchars($_POST['menudecaler']);
       }
       if (isset($_POST['bar']) && $_POST['bar']) {
         $bar = htmlspecialchars($_POST['bar']);

@@ -14,49 +14,13 @@
     if ($user['type'] != "admin"){
         header('Location: /Dashbord/index.php');
     }
-
-    $quey = "SELECT * FROM parametre WHERE id_user = '$curr_user->id_user'";
-    $query = $pdo->prepare($quey);
-    $query->execute();
-    $parametre = $query->fetchAll(PDO::FETCH_ASSOC);
-
-  
-/*  
-    
-    $BarTheme = '"dark"'; //dark or light or default of menu
-    $Boxed = "false"; // menu decaler
-    $barCondensed ="true"; //minimaze
-    $barScrollable ="false"; 
-    $darkMode ="false"; //drak mode totale
-*/
-    //var_dump($parametre);
-    foreach($parametre as $value){
-        $BarTheme = '"'.$value['bar_theme'].'"'; //dark or light or default of menu
-        if ($value['menu_decaler'] == "0"){
-            $Boxed = "false"; // menu decaler
-        }
-        if ($value['menu_decaler'] == "1"){
-            $Boxed = "true"; // menu decaler
-        }
-        if($value['bar']=="condensed"){
-            $barCondensed ="true"; //minimaze
-            $barScrollable ="false"; 
-        }
-        if($value['bar']=="fixed"){
-            $barCondensed ="false"; //minimaze
-            $barScrollable ="false"; 
-        }
-        if($value['bar']=="scrollable"){
-            $barCondensed ="false"; //minimaze
-            $barScrollable ="true"; 
-        }
-        if($value['darkmode'] == "0"){
-            $darkMode ="false"; //drak mode totale
-        }
-        if($value['darkmode'] == "1"){
-            $darkMode ="true"; //drak mode totale
-        }  
+    if (isset($_GET['user']) && $_GET['user']){
+        $query = $pdo->prepare("SELECT * FROM `menu` WHERE id_user ='".intval(htmlspecialchars($_GET['user']))."'");
+        $query->execute();
+        $MenuObjetUser = $query->fetchAll(PDO::FETCH_ASSOC);
     }
+    
+    include('models/parametreshow.php');
 }
     
 ?>
@@ -149,7 +113,6 @@
                                                             <td>". $value1['mail']."</td>
                                                             <td>".$value1['mdp']."</td>
                                                             <td>".$value1['type']."</td><td><button onclick='supp(".$value1['id_user'].")' class='col btn btn-light' style='width: 100px; height: 35px;'>Supp</button></td>";
-
                                                     };
                                                 ?>
                                             </tbody>
@@ -240,12 +203,13 @@
                                         <div class="container-fluid show">
                                             <div class="row">
                                                 <div class="col-xl-3 col-lg-3 order-lg-1 row">
-                                                    <select class="form-control col" id="USER" style="width: 60px; height: 35px; margin-right:5px;">
+                                                    <select class="form-control col" id="USER" style="width: 60px; height: 35px; margin-right:5px;" onchange="location = `${this.value}#USER`;">
+                                                    <option>User <?php echo  $_GET['user']; ?></option>
                                                     <?php foreach($result as $value1){
-                                                            echo '<option value="'.$value1['id_user'].'">'.$value1['id_user'].'</option>';
+                                                            echo "<option value='/Dashbord/utilisateur.php?user=".$value1['id_user']."'>".$value1['id_user']."</option>";
                                                     }; ?>
                                                     </select>
-                                                    <a href="javascript:AffichieruserMenu();" class="col btn btn-light" style="width: 50px; height: 35px; "><i id="loaduserMenuSPI" class=""></i>load</a>
+                                                    
                                                 </div>
                                                 <div class="col-xl-12 col-lg-12 col-sm-12 order-lg-1 row">
                                                 <table class="table mt-1" style="background-color:#333131;">
@@ -260,14 +224,15 @@
                                                         <th scope="row" style="width: 330.4px;">
                                                         <ul class="metismenu side-nav h-100" id="idusers">
                                                             <?php
-                                                        if($MenuObjet != null){
-                                                            foreach ($MenuObjet[0] as $key => $value){
+
+                                                        if($MenuObjetUser != null){
+                                                            foreach ($MenuObjetUser[0] as $key => $value){
                                                                 if ($key != "id_menu" && $key != "id_user"){
                                                                     if($value != ""){
                                                                     ?>
                                                                         <il class="side-nav-title side-nav-item"><?php echo $key; ?></il>
                                                                         <?php
-                                                                        $obj = explode(",",$MenuObjet[0][$key]);
+                                                                        $obj = explode(",",$MenuObjetUser[0][$key]);
                                                                         foreach ($obj as $value2){
                                                                             if ($value2 != ""){
                                                                                 include('menu/'.$value2); 

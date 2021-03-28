@@ -160,7 +160,7 @@ try {
         echo "  ". 1;
       }
       if (isset($_POST['mode']) && $_POST['mode'] == 3){ //DEL
-
+        ObjectAjout($pdo);
         $curr_user = $_SESSION['user'];
         if(isset($_POST['id']) && $_POST['id']){
           $id = htmlspecialchars($_POST['id']);
@@ -175,6 +175,7 @@ try {
         echo "  ". 1;
       }
       if (isset($_POST['searcheUser']) || $_RequeteMET){ // control menu
+        //
           if(isset($_DELETE['id']) && $_DELETE['id'] != ""){
           }
           if(isset($_POST['AjouterColoneName']) && $_POST['AjouterColoneName'] != ""){// Aju Colone
@@ -235,11 +236,13 @@ try {
             HeadDatatoValueDEL($pdo,$_RequeteHead['searcheUser'],$_RequeteHead['ColoneName'],$_RequeteHead['FileName']);
           }
       }
+      
     }else {
      $arr["state"] = "error: Not admin";
       echo json_encode($arr);
     }
   }
+
 } catch (\Throwable $th) {
   echo 0;
   echo $quey4;

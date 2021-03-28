@@ -26,8 +26,8 @@ function load() {
           value: obj2,
           min: -20,
           max: 127,
-          width: "50%",
-          height: "30px",
+          width: "100%",
+          height: "20px",
           color: "#fd7e14",
         },
       };
@@ -57,7 +57,12 @@ function load() {
     //console.log(bat.betweenMinAndMax(-55, 127))
   };
 }
+let sec;
+const nbse = document.getElementById("NBse");
+sec = nbse.value;
 res = setInterval(() => {
+  sec = nbse.value;
+  console.log(sec);
   let obj;
   let xhttp = new XMLHttpRequest();
   xhttp.open("GET", "/Dashbord/server.php?battrie=battrie", true);
@@ -78,11 +83,11 @@ res = setInterval(() => {
       data = { progres: { value: obj2 } };
       temp.Update(data);
     } catch (err) {
-      console.error("error");
+      //console.error("error");
     }
   };
   obj = null;
-}, 3000); /*
+}, sec * 1000); /*
 function UpdateApex(elem, objet = {}) {
     elem.updateOptions(objet);
 }

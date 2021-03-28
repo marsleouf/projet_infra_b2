@@ -50,7 +50,7 @@
 
                          <a href="javascript:void(0);" class="dropdown-item notify-item" id="notif">
                              <div class="notify-icon" style=" background-color:<?php echo $value1['color']; ?>">
-                                 <img class="mdi mdi-comment-account-outline notificon" src="icons/diagram-3.svg"></img>
+                                 <img class="mdi mdi-comment-account-outline notificon" src="<?php echo $value1['icon']; ?>"></img>
                              </div>
                              <p class="notify-details"><?php echo $value1['titre']; ?></p>
                              <p class="notify-details"><?php echo $value1['text']; ?>
@@ -123,7 +123,7 @@
          <li class="dropdown notification-list">
              <a class="nav-link dropdown-toggle nav-user arrow-none mr-0" data-toggle="dropdown" href="#" role="button" aria-haspopup="false" aria-expanded="false">
                  <span class="account-user-avatar">
-                     <img src="<?php echo $image ?>" alt="user-image" class="rounded-circle">
+                     <img src="<?php try {if ($image != '/'){echo $image;}else{echo '/Dashbord/images/user.png';}} catch (\Exception $tr){}?>"  class="rounded-circle">
                  </span>
                  <span>
                      <span class="account-user-name"><?php echo $user['prenom'] . " " . $user['nom'] ?></span>
@@ -141,6 +141,7 @@
                          <h6 class="text-overflow m-0">Bienvenue !</h6>
                      </div>
                  <?php } ?>
+    
                  <!-- item
                 <a href="javascript:void(0);" class="dropdown-item notify-item">
                 <i class="mdi mdi-account-circle mr-1"></i>

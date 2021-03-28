@@ -14,51 +14,7 @@
     if ($user['type'] != "admin"){
         header('Location: /Dashbord/index.php');
     }
-
-    $quey = "SELECT * FROM parametre WHERE id_user = '$curr_user->id_user'";
-    $query = $pdo->prepare($quey);
-    $query->execute();
-    $parametre = $query->fetchAll(PDO::FETCH_ASSOC);
-
-  
-/*  
-    
-    $BarTheme = '"dark"'; //dark or light or default of menu
-    $Boxed = "false"; // menu decaler
-    $barCondensed ="true"; //minimaze
-    $barScrollable ="false"; 
-    $darkMode ="false"; //drak mode totale
-*/
-    //var_dump($parametre);
-    foreach($parametre as $value){
-        $BarTheme = '"'.$value['bar_theme'].'"'; //dark or light or default of menu
-        if ($value['menu_decaler'] == "0"){
-            $Boxed = "false"; // menu decaler
-        }
-        if ($value['menu_decaler'] == "1"){
-            $Boxed = "true"; // menu decaler
-        }
-        if($value['bar']=="condensed"){
-            $barCondensed ="true"; //minimaze
-            $barScrollable ="false"; 
-        }
-        if($value['bar']=="fixed"){
-            $barCondensed ="false"; //minimaze
-            $barScrollable ="false"; 
-        }
-        if($value['bar']=="scrollable"){
-            $barCondensed ="false"; //minimaze
-            $barScrollable ="true"; 
-        }
-        if($value['darkmode'] == "0"){
-            $darkMode ="false"; //drak mode totale
-        }
-        if($value['darkmode'] == "1"){
-            $darkMode ="true"; //drak mode totale
-        }
-        
-        
-    }
+include('models/parametreshow.php');
 }
     
 ?>

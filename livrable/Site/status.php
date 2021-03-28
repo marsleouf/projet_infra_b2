@@ -12,63 +12,17 @@
     $reponse_user = $pdo->query("SELECT * FROM users WHERE mail LIKE '$curr_user->mail'");
     $user = $reponse_user->fetch();
     $image = "/".substr($user['path_img'],16);
-
-    $quey = "SELECT * FROM parametre WHERE id_user = '$curr_user->id_user'";
-    $query = $pdo->prepare($quey);
-    $query->execute();
-    $parametre = $query->fetchAll(PDO::FETCH_ASSOC);
-
-  
-/*  
-    
-    $BarTheme = '"dark"'; //dark or light or default of menu
-    $Boxed = "false"; // menu decaler
-    $barCondensed ="true"; //minimaze
-    $barScrollable ="false"; 
-    $darkMode ="false"; //drak mode totale
-*/
-    //var_dump($parametre);
- $color1= "#31f500";
- $color2 = "#ffbc00"; 
- $color3= "#31f500";
- $color4 = "#ffbc00";
- $color5 = "#31f500";
- $color6 = "#ffbc00";  
-    foreach($parametre as $value){
-        $BarTheme = '"'.$value['bar_theme'].'"'; //dark or light or default of menu
-        if ($value['menu_decaler'] == "0"){
-            $Boxed = "false"; // menu decaler
-        }
-        if ($value['menu_decaler'] == "1"){
-            $Boxed = "true"; // menu decaler
-        }
-        if($value['bar']=="condensed"){
-            $barCondensed ="true"; //minimaze
-            $barScrollable ="false"; 
-        }
-        if($value['bar']=="fixed"){
-            $barCondensed ="false"; //minimaze
-            $barScrollable ="false"; 
-        }
-        if($value['bar']=="scrollable"){
-            $barCondensed ="false"; //minimaze
-            $barScrollable ="true"; 
-        }
-        if($value['darkmode'] == 0){
-            $darkMode ="false"; //drak mode totale
-        }
-        if($value['darkmode'] == 1){
-            $darkMode ="true"; //drak mode totale
-        }
-        $color1 = $value['color1'];
-        $color2 = $value['color2']; 
-        $color3 = $value['color3'];
-        $color4 = $value['color4']; 
-        $color5 = $value['color5'];
-        $color6 = $value['color6']; 
+    try{
+        $fail2ban = new PDO('sqlite:/var/lib/fail2ban/fail2ban.sqlite3',"","");
+        //$fail2ban->setAttribute(PDO::ATTR_DEFAULT_FETCH_MODE, PDO::FETCH_ASSOC);
+        //$pdo->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION); // ERRMODE_WARNING | ERRMODE_EXCEPTION | ERRMODE_SILENT
+        //$db = new SQLite3('/var/lib/fail2ban/fail2ban.sqlite3');
         
-        
-    }
+    } catch(Exception $e) {
+        echo "Impossible d'accéder à la base de données SQLite : ".$e->getMessage();
+    };
+    include('models/parametreshow.php');
+ 
 }
 function sysCmd($cmd) {
 	exec( $cmd . " 2>&1", $output);
@@ -138,23 +92,52 @@ function sysCmd($cmd) {
                             </div>
                         </div>
                         <div class="row">
-                            <div class="alert alert-warning alert-dismissible fade show" role="alert">
-                            <strong>Holy guacamole!</strong> You should check in on some of those fields below.
-                            <button type="button" class="close" data-dismiss="alert" aria-label="Close">
-                                <span aria-hidden="true">&times;</span>
-                            </button>
-                            </div>
                             <div class="card col-xl-12 col-lg-12 col-sm-12 order-lg-12" >
-                                <div class="card-body">
-                                    <h5 class="card-title">CPU Usage</h5> 
-                                            <!-- <script src="js/plex.js"></script>
-                                            <h5 id="name_user"></h5>-->
-                                            <h5> <?php 
-                                        //    $value = 
-                                           //echo $value[0];
-                                           echo shell_exec('sensors | grep Core 2>&1');
-                                            ?></h5> 
+                                <div class="card-body" style="padding-left: 0%; padding-right: 0%;">
+                                    <h5 class="card-title">Fail2ban</h5> 
+
+                                <div class="col-sm-12 card col-xl-12 col-lg-12 table-responsive " style="width: 100%;  height: 700px;" >
+                                    <table class="table table-hover">
+                                            <thead class="thead-dark">
+                                            <tr>
+                                                <th>Jail</th>
+                                                <th>Ip </th>
+                                                <th>Time of Bann</th>
+                                                <th>Data</th>
+                                                
+                                            </tr>
+                                            </thead>
+                                            <tbody id="tableaux" >
+                                            <?php 
+                                                $results = $fail2ban->query('SELECT * FROM bans ORDER BY timeofban DESC');
+                                                $result = $results->fetchAll();
+                                                foreach($result as $key=>$value) { 
+                                                    $classAtack ="";
+                                                    if($value[0] == "sshd"){ 
+                                                       $classAtack = "table-danger";
+                                                    } else if($value[0] == "nginx-4xx"){
+                                                        $classAtack = "table-warning";
+                                                    }
+                                                    
+                                                    ?>
+                                                    <tr class="<?php echo $classAtack ?>">
+                                                        <td><?php echo $value[0]; ?></td>
+                                                        <td><?php echo $value[1]; ?></td>
+                                                        <td><?php echo date('d/m/Y',$value[2]); ?></td>
+                                                        <td><?php echo $value[3]; ?></td>
+                                                    </tr>
+                                            <?php
+                                                }
                                             
+                                            
+                                            /*$results2 = $fail2ban->query('SELECT data FROM bans');
+                                        $result2 = $results2->fetchAll();
+                                        var_dump($result);
+                                        var_dump($result2);*/
+                                            ?>
+                                            </tbody>
+                                        </table>
+                                    </div>        
                                 </div>
                             </div>
                         </div>     

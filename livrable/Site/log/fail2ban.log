@@ -1,0 +1,188 @@
+2021-03-14 00:00:01,858 fail2ban.server         [553]: INFO    rollover performed on /var/log/fail2ban.log
+2021-03-14 00:02:50,878 fail2ban.filter         [553]: INFO    [sshd] Found 45.135.232.165 - 2021-03-14 00:02:50
+2021-03-14 00:12:41,561 fail2ban.filter         [553]: INFO    [sshd] Found 45.135.232.165 - 2021-03-14 00:12:41
+2021-03-14 00:15:24,474 fail2ban.filter         [553]: INFO    [sshd] Found 119.29.113.149 - 2021-03-14 00:15:24
+2021-03-14 00:18:13,802 fail2ban.filter         [553]: INFO    [sshd] Found 111.229.128.169 - 2021-03-14 00:18:13
+2021-03-14 00:19:47,424 fail2ban.filter         [553]: INFO    [sshd] Found 129.28.14.248 - 2021-03-14 00:19:47
+2021-03-14 00:24:41,336 fail2ban.filter         [553]: INFO    [sshd] Found 45.135.232.165 - 2021-03-14 00:24:41
+2021-03-14 00:29:20,318 fail2ban.filter         [553]: INFO    [sshd] Found 111.229.4.66 - 2021-03-14 00:29:20
+2021-03-14 00:34:18,007 fail2ban.filter         [553]: INFO    [sshd] Found 142.93.59.117 - 2021-03-14 00:34:18
+2021-03-14 00:37:39,659 fail2ban.filter         [553]: INFO    [sshd] Found 138.197.213.192 - 2021-03-14 00:37:39
+2021-03-14 00:43:55,460 fail2ban.filter         [553]: INFO    [sshd] Found 209.141.34.17 - 2021-03-14 00:43:55
+2021-03-14 00:43:55,495 fail2ban.filter         [553]: INFO    [sshd] Found 190.85.108.186 - 2021-03-14 00:43:55
+2021-03-14 00:49:36,650 fail2ban.filter         [553]: INFO    [sshd] Found 187.72.82.212 - 2021-03-14 00:49:36
+2021-03-14 01:00:32,386 fail2ban.filter         [553]: INFO    [sshd] Found 77.68.16.124 - 2021-03-14 01:00:32
+2021-03-14 01:02:58,179 fail2ban.filter         [553]: INFO    [sshd] Found 165.227.85.21 - 2021-03-14 01:02:58
+2021-03-14 01:06:31,391 fail2ban.filter         [553]: INFO    [sshd] Found 194.61.82.151 - 2021-03-14 01:06:31
+2021-03-14 02:15:00,169 fail2ban.filter         [553]: INFO    [sshd] Found 180.96.11.20 - 2021-03-14 02:15:00
+2021-03-14 02:29:16,309 fail2ban.filter         [553]: INFO    [sshd] Found 165.227.193.157 - 2021-03-14 02:29:16
+2021-03-14 02:29:16,742 fail2ban.filter         [553]: INFO    [sshd] Found 121.4.135.108 - 2021-03-14 02:29:16
+2021-03-14 02:32:02,143 fail2ban.filter         [553]: INFO    [sshd] Found 178.250.158.236 - 2021-03-14 02:32:02
+2021-03-14 02:34:09,883 fail2ban.filter         [553]: INFO    [sshd] Found 106.55.162.110 - 2021-03-14 02:34:09
+2021-03-14 02:59:20,530 fail2ban.filter         [553]: INFO    [sshd] Found 112.26.113.106 - 2021-03-14 02:59:20
+2021-03-14 03:15:13,419 fail2ban.filter         [553]: INFO    [sshd] Found 106.75.212.75 - 2021-03-14 03:15:13
+2021-03-14 03:55:34,488 fail2ban.filter         [553]: INFO    [sshd] Found 43.239.67.110 - 2021-03-14 03:55:34
+2021-03-14 04:07:22,687 fail2ban.filter         [553]: INFO    [sshd] Found 62.234.213.198 - 2021-03-14 04:07:22
+2021-03-14 04:08:39,777 fail2ban.filter         [553]: INFO    [sshd] Found 60.220.185.64 - 2021-03-14 04:08:39
+2021-03-14 04:14:29,667 fail2ban.filter         [553]: INFO    [sshd] Found 58.71.220.238 - 2021-03-14 04:14:29
+2021-03-14 04:15:33,363 fail2ban.filter         [553]: INFO    [sshd] Found 35.198.197.237 - 2021-03-14 04:15:32
+2021-03-14 04:50:33,299 fail2ban.filter         [553]: INFO    [sshd] Found 27.124.40.68 - 2021-03-14 04:50:33
+2021-03-14 05:18:08,314 fail2ban.filter         [553]: INFO    [sshd] Found 210.196.144.26 - 2021-03-14 05:18:08
+2021-03-14 05:18:24,893 fail2ban.filter         [553]: INFO    [sshd] Found 111.198.29.247 - 2021-03-14 05:18:24
+2021-03-14 05:21:36,082 fail2ban.filter         [553]: INFO    [sshd] Found 150.158.174.229 - 2021-03-14 05:21:36
+2021-03-14 05:24:39,982 fail2ban.filter         [553]: INFO    [sshd] Found 41.38.87.134 - 2021-03-14 05:24:39
+2021-03-14 05:29:20,425 fail2ban.filter         [553]: INFO    [sshd] Found 212.64.76.91 - 2021-03-14 05:29:20
+2021-03-14 05:39:38,333 fail2ban.filter         [553]: INFO    [sshd] Found 83.167.57.49 - 2021-03-14 05:39:37
+2021-03-14 06:37:44,679 fail2ban.filter         [553]: INFO    [sshd] Found 111.229.156.53 - 2021-03-14 06:37:44
+2021-03-14 06:42:08,703 fail2ban.filter         [553]: INFO    [sshd] Found 138.197.151.213 - 2021-03-14 06:42:08
+2021-03-14 06:45:42,113 fail2ban.filter         [553]: INFO    [sshd] Found 144.217.15.88 - 2021-03-14 06:45:42
+2021-03-14 07:08:52,528 fail2ban.filter         [553]: INFO    [sshd] Found 134.122.72.221 - 2021-03-14 07:08:52
+2021-03-14 07:21:26,263 fail2ban.filter         [553]: INFO    [sshd] Found 181.223.88.209 - 2021-03-14 07:21:26
+2021-03-14 08:07:53,683 fail2ban.filter         [553]: INFO    [sshd] Found 149.202.190.73 - 2021-03-14 08:07:53
+2021-03-14 08:08:24,243 fail2ban.filter         [553]: INFO    [sshd] Found 27.155.101.197 - 2021-03-14 08:08:24
+2021-03-14 08:10:05,941 fail2ban.filter         [553]: INFO    [sshd] Found 65.49.222.222 - 2021-03-14 08:10:05
+2021-03-14 08:10:46,249 fail2ban.filter         [553]: INFO    [sshd] Found 102.130.114.164 - 2021-03-14 08:10:46
+2021-03-14 08:12:04,049 fail2ban.filter         [553]: INFO    [sshd] Found 180.180.241.93 - 2021-03-14 08:12:04
+2021-03-14 08:12:17,319 fail2ban.filter         [553]: INFO    [sshd] Found 145.239.82.192 - 2021-03-14 08:12:17
+2021-03-14 08:12:32,097 fail2ban.filter         [553]: INFO    [sshd] Found 119.29.53.168 - 2021-03-14 08:12:32
+2021-03-14 08:13:33,424 fail2ban.filter         [553]: INFO    [sshd] Found 88.129.82.123 - 2021-03-14 08:13:33
+2021-03-14 08:15:32,495 fail2ban.filter         [553]: INFO    [sshd] Found 120.221.149.166 - 2021-03-14 08:15:32
+2021-03-14 08:16:08,743 fail2ban.filter         [553]: INFO    [sshd] Found 94.16.106.195 - 2021-03-14 08:16:08
+2021-03-14 08:17:01,521 fail2ban.filter         [553]: INFO    [sshd] Found 194.152.206.47 - 2021-03-14 08:17:01
+2021-03-14 08:17:36,317 fail2ban.filter         [553]: INFO    [sshd] Found 95.85.28.125 - 2021-03-14 08:17:36
+2021-03-14 08:19:28,339 fail2ban.filter         [553]: INFO    [sshd] Found 164.90.210.8 - 2021-03-14 08:19:28
+2021-03-14 08:19:31,045 fail2ban.filter         [553]: INFO    [sshd] Found 222.88.199.133 - 2021-03-14 08:19:30
+2021-03-14 08:19:55,967 fail2ban.filter         [553]: INFO    [sshd] Found 51.140.185.84 - 2021-03-14 08:19:55
+2021-03-14 08:22:07,763 fail2ban.filter         [553]: INFO    [sshd] Found 157.245.230.120 - 2021-03-14 08:22:07
+2021-03-14 08:24:58,326 fail2ban.filter         [553]: INFO    [sshd] Found 178.251.12.210 - 2021-03-14 08:24:58
+2021-03-14 08:26:40,945 fail2ban.filter         [553]: INFO    [sshd] Found 31.20.193.52 - 2021-03-14 08:26:40
+2021-03-14 08:26:59,707 fail2ban.filter         [553]: INFO    [sshd] Found 204.44.83.10 - 2021-03-14 08:26:59
+2021-03-14 08:29:11,529 fail2ban.filter         [553]: INFO    [sshd] Found 217.182.123.100 - 2021-03-14 08:29:11
+2021-03-14 08:31:08,862 fail2ban.filter         [553]: INFO    [sshd] Found 91.150.172.162 - 2021-03-14 08:31:08
+2021-03-14 08:31:33,074 fail2ban.filter         [553]: INFO    [sshd] Found 120.48.23.46 - 2021-03-14 08:31:33
+2021-03-14 09:01:14,879 fail2ban.filter         [553]: INFO    [sshd] Found 101.251.219.100 - 2021-03-14 09:01:14
+2021-03-14 09:06:18,402 fail2ban.filter         [553]: INFO    [sshd] Found 42.192.140.183 - 2021-03-14 09:06:18
+2021-03-14 09:18:28,295 fail2ban.filter         [553]: INFO    [sshd] Found 45.146.165.72 - 2021-03-14 09:18:28
+2021-03-14 09:29:25,228 fail2ban.filter         [553]: INFO    [sshd] Found 45.146.165.72 - 2021-03-14 09:29:24
+2021-03-14 09:35:01,110 fail2ban.filter         [553]: INFO    [sshd] Found 176.122.164.94 - 2021-03-14 09:35:00
+2021-03-14 09:35:39,392 fail2ban.filter         [553]: INFO    [sshd] Found 106.75.141.160 - 2021-03-14 09:35:39
+2021-03-14 09:40:00,116 fail2ban.filter         [553]: INFO    [sshd] Found 45.146.165.72 - 2021-03-14 09:39:59
+2021-03-14 10:56:01,383 fail2ban.filter         [553]: INFO    [sshd] Found 69.119.85.43 - 2021-03-14 10:56:01
+2021-03-14 11:00:25,014 fail2ban.filter         [553]: INFO    [sshd] Found 182.254.247.245 - 2021-03-14 11:00:25
+2021-03-14 11:00:41,667 fail2ban.filter         [553]: INFO    [sshd] Found 219.143.38.232 - 2021-03-14 11:00:41
+2021-03-14 11:08:01,108 fail2ban.filter         [553]: INFO    [sshd] Found 104.128.237.207 - 2021-03-14 11:08:00
+2021-03-14 11:58:13,321 fail2ban.filter         [553]: INFO    [sshd] Found 35.199.73.100 - 2021-03-14 11:58:13
+2021-03-14 12:04:40,845 fail2ban.filter         [553]: INFO    [sshd] Found 157.245.81.242 - 2021-03-14 12:04:40
+2021-03-14 12:27:50,568 fail2ban.filter         [553]: INFO    [sshd] Found 157.230.22.160 - 2021-03-14 12:27:50
+2021-03-14 12:52:18,523 fail2ban.filter         [553]: INFO    [sshd] Found 171.84.2.6 - 2021-03-14 12:52:18
+2021-03-14 13:08:22,369 fail2ban.filter         [553]: INFO    [sshd] Found 119.96.189.177 - 2021-03-14 13:08:22
+2021-03-14 14:01:08,101 fail2ban.filter         [553]: INFO    [sshd] Found 47.244.213.73 - 2021-03-14 14:01:07
+2021-03-14 14:07:54,833 fail2ban.filter         [553]: INFO    [sshd] Found 45.155.205.211 - 2021-03-14 14:07:54
+2021-03-14 15:27:55,140 fail2ban.filter         [553]: INFO    [sshd] Found 68.116.41.6 - 2021-03-14 15:27:54
+2021-03-14 15:29:06,739 fail2ban.filter         [553]: INFO    [sshd] Found 37.83.196.215 - 2021-03-14 15:29:06
+2021-03-14 15:30:23,135 fail2ban.filter         [553]: INFO    [sshd] Found 191.177.100.120 - 2021-03-14 15:30:23
+2021-03-14 15:31:57,904 fail2ban.filter         [553]: INFO    [sshd] Found 49.232.134.70 - 2021-03-14 15:31:57
+2021-03-14 15:32:57,547 fail2ban.filter         [553]: INFO    [sshd] Found 51.178.139.41 - 2021-03-14 15:32:57
+2021-03-14 15:33:23,902 fail2ban.filter         [553]: INFO    [sshd] Found 213.178.252.28 - 2021-03-14 15:33:23
+2021-03-14 15:34:35,217 fail2ban.filter         [553]: INFO    [sshd] Found 45.58.56.132 - 2021-03-14 15:34:35
+2021-03-14 15:39:36,856 fail2ban.filter         [553]: INFO    [sshd] Found 192.99.70.67 - 2021-03-14 15:39:36
+2021-03-14 15:40:43,186 fail2ban.filter         [553]: INFO    [sshd] Found 23.90.163.49 - 2021-03-14 15:40:42
+2021-03-14 15:42:50,857 fail2ban.filter         [553]: INFO    [sshd] Found 146.59.234.40 - 2021-03-14 15:42:50
+2021-03-14 15:42:51,757 fail2ban.filter         [553]: INFO    [sshd] Found 207.154.216.13 - 2021-03-14 15:42:51
+2021-03-14 15:43:40,551 fail2ban.filter         [553]: INFO    [sshd] Found 101.36.122.184 - 2021-03-14 15:43:40
+2021-03-14 15:46:34,920 fail2ban.filter         [553]: INFO    [sshd] Found 3.133.144.23 - 2021-03-14 15:46:34
+2021-03-14 15:56:33,095 fail2ban.filter         [553]: INFO    [sshd] Found 150.158.174.229 - 2021-03-14 15:56:32
+2021-03-14 16:08:13,734 fail2ban.filter         [553]: INFO    [sshd] Found 150.109.115.98 - 2021-03-14 16:08:13
+2021-03-14 17:09:37,171 fail2ban.filter         [553]: INFO    [sshd] Found 81.69.59.23 - 2021-03-14 17:09:37
+2021-03-14 17:10:52,024 fail2ban.filter         [553]: INFO    [sshd] Found 178.234.37.197 - 2021-03-14 17:10:52
+2021-03-14 17:12:20,529 fail2ban.filter         [553]: INFO    [sshd] Found 117.169.16.205 - 2021-03-14 17:12:20
+2021-03-14 17:15:40,195 fail2ban.filter         [553]: INFO    [sshd] Found 167.99.202.143 - 2021-03-14 17:15:40
+2021-03-14 17:16:04,262 fail2ban.filter         [553]: INFO    [sshd] Found 106.12.141.142 - 2021-03-14 17:16:04
+2021-03-14 17:16:17,424 fail2ban.filter         [553]: INFO    [sshd] Found 62.234.20.135 - 2021-03-14 17:16:17
+2021-03-14 17:26:11,717 fail2ban.filter         [553]: INFO    [sshd] Found 218.21.240.24 - 2021-03-14 17:26:11
+2021-03-14 18:00:02,438 fail2ban.filter         [553]: INFO    [sshd] Found 106.13.49.27 - 2021-03-14 18:00:02
+2021-03-14 18:04:10,891 fail2ban.filter         [553]: INFO    [sshd] Found 112.94.31.74 - 2021-03-14 18:04:10
+2021-03-14 18:05:13,694 fail2ban.filter         [553]: INFO    [sshd] Found 196.201.224.30 - 2021-03-14 18:05:13
+2021-03-14 18:06:48,218 fail2ban.filter         [553]: INFO    [sshd] Found 120.48.0.250 - 2021-03-14 18:06:47
+2021-03-14 18:07:25,253 fail2ban.filter         [553]: INFO    [sshd] Found 206.189.194.249 - 2021-03-14 18:07:25
+2021-03-14 18:10:00,059 fail2ban.filter         [553]: INFO    [sshd] Found 43.128.12.137 - 2021-03-14 18:10:00
+2021-03-14 18:15:35,216 fail2ban.filter         [553]: INFO    [sshd] Found 121.18.88.186 - 2021-03-14 18:15:34
+2021-03-14 19:47:33,662 fail2ban.filter         [553]: INFO    [sshd] Found 106.12.118.54 - 2021-03-14 19:47:33
+2021-03-14 19:51:25,986 fail2ban.filter         [553]: INFO    [sshd] Found 217.160.249.27 - 2021-03-14 19:51:25
+2021-03-14 19:58:39,026 fail2ban.filter         [553]: INFO    [sshd] Found 1.245.61.144 - 2021-03-14 19:58:38
+2021-03-14 20:42:22,166 fail2ban.filter         [553]: INFO    [sshd] Found 133.167.95.209 - 2021-03-14 20:42:21
+2021-03-14 20:43:46,176 fail2ban.filter         [553]: INFO    [sshd] Found 49.247.204.78 - 2021-03-14 20:43:46
+2021-03-14 20:48:33,092 fail2ban.filter         [553]: INFO    [sshd] Found 106.52.52.52 - 2021-03-14 20:48:32
+2021-03-14 20:52:41,009 fail2ban.filter         [553]: INFO    [sshd] Found 223.197.125.10 - 2021-03-14 20:52:40
+2021-03-14 21:26:20,878 fail2ban.filter         [553]: INFO    [sshd] Found 94.143.194.22 - 2021-03-14 21:26:20
+2021-03-14 21:34:47,961 fail2ban.filter         [553]: INFO    [sshd] Found 180.101.202.30 - 2021-03-14 21:34:47
+2021-03-14 21:43:49,767 fail2ban.filter         [553]: INFO    [sshd] Found 82.22.211.81 - 2021-03-14 21:43:49
+2021-03-14 21:47:04,720 fail2ban.filter         [553]: INFO    [sshd] Found 132.232.67.52 - 2021-03-14 21:47:04
+2021-03-14 21:53:12,429 fail2ban.filter         [553]: INFO    [sshd] Found 111.21.99.227 - 2021-03-14 21:53:12
+2021-03-14 21:59:20,750 fail2ban.filter         [553]: INFO    [sshd] Found 157.230.51.232 - 2021-03-14 21:59:20
+2021-03-14 22:00:31,448 fail2ban.filter         [553]: INFO    [sshd] Found 140.143.244.192 - 2021-03-14 22:00:31
+2021-03-14 22:02:38,135 fail2ban.filter         [553]: INFO    [sshd] Found 178.62.50.191 - 2021-03-14 22:02:37
+2021-03-14 22:06:51,966 fail2ban.filter         [553]: INFO    [sshd] Found 109.244.103.136 - 2021-03-14 22:06:51
+2021-03-14 22:07:58,998 fail2ban.filter         [553]: INFO    [sshd] Found 106.12.112.49 - 2021-03-14 22:07:58
+2021-03-14 22:28:26,015 fail2ban.filter         [553]: INFO    [sshd] Found 47.254.197.75 - 2021-03-14 22:28:25
+2021-03-14 22:39:09,568 fail2ban.filter         [553]: INFO    [sshd] Found 103.251.19.44 - 2021-03-14 22:39:09
+2021-03-14 22:46:36,879 fail2ban.filter         [553]: INFO    [sshd] Found 139.59.247.181 - 2021-03-14 22:46:36
+2021-03-14 22:56:59,164 fail2ban.server         [553]: INFO    Shutdown in progress...
+2021-03-14 22:56:59,164 fail2ban.server         [553]: INFO    Stopping all jails
+2021-03-14 22:56:59,164 fail2ban.filter         [553]: INFO    Removed logfile: '/var/log/auth.log'
+2021-03-14 22:56:59,392 fail2ban.actions        [553]: NOTICE  [sshd] Flush ticket(s) with iptables-multiport
+2021-03-14 22:56:59,767 fail2ban.jail           [553]: INFO    Jail 'sshd' stopped
+2021-03-14 22:56:59,767 fail2ban.database       [553]: INFO    Connection to database closed.
+2021-03-14 22:56:59,768 fail2ban.server         [553]: INFO    Exiting Fail2ban
+2021-03-15 08:50:59,121 fail2ban.server         [562]: INFO    --------------------------------------------------
+2021-03-15 08:50:59,185 fail2ban.server         [562]: INFO    Starting Fail2ban v0.10.2
+2021-03-15 08:50:59,868 fail2ban.database       [562]: INFO    Connected to fail2ban persistent database '/var/lib/fail2ban/fail2ban.sqlite3'
+2021-03-15 08:50:59,977 fail2ban.jail           [562]: INFO    Creating new jail 'sshd'
+2021-03-15 08:51:02,458 fail2ban.jail           [562]: INFO    Jail 'sshd' uses pyinotify {}
+2021-03-15 08:51:02,462 fail2ban.jail           [562]: INFO    Initiated 'pyinotify' backend
+2021-03-15 08:51:02,463 fail2ban.filter         [562]: INFO      maxLines: 1
+2021-03-15 08:51:02,486 fail2ban.server         [562]: INFO    Jail sshd is not a JournalFilter instance
+2021-03-15 08:51:02,887 fail2ban.filter         [562]: INFO    Added logfile: '/var/log/auth.log' (pos = 100234, hash = 8ac06be13ba331e785032db17984d0d6cebf0262)
+2021-03-15 08:51:02,890 fail2ban.filter         [562]: INFO      encoding: UTF-8
+2021-03-15 08:51:02,890 fail2ban.filter         [562]: INFO      maxRetry: 5
+2021-03-15 08:51:02,891 fail2ban.filter         [562]: INFO      findtime: 600
+2021-03-15 08:51:02,891 fail2ban.actions        [562]: INFO      banTime: 600
+2021-03-15 08:51:02,893 fail2ban.jail           [562]: INFO    Jail 'sshd' started
+2021-03-15 08:54:16,580 fail2ban.filter         [562]: INFO    [sshd] Found 134.209.103.209 - 2021-03-15 08:54:16
+2021-03-15 09:19:39,520 fail2ban.filter         [562]: INFO    [sshd] Found 59.126.51.197 - 2021-03-15 09:19:39
+2021-03-15 09:23:49,623 fail2ban.filter         [562]: INFO    [sshd] Found 104.236.52.94 - 2021-03-15 09:23:49
+2021-03-15 09:25:03,644 fail2ban.filter         [562]: INFO    [sshd] Found 45.146.165.72 - 2021-03-15 09:25:03
+2021-03-15 09:25:22,370 fail2ban.filter         [562]: INFO    [sshd] Found 46.101.204.139 - 2021-03-15 09:25:21
+2021-03-15 09:25:39,995 fail2ban.filter         [562]: INFO    [sshd] Found 193.228.108.122 - 2021-03-15 09:25:39
+2021-03-15 09:26:07,355 fail2ban.filter         [562]: INFO    [sshd] Found 78.2.105.114 - 2021-03-15 09:26:07
+2021-03-15 09:30:14,720 fail2ban.filter         [562]: INFO    [sshd] Found 42.194.148.212 - 2021-03-15 09:30:14
+2021-03-15 09:31:27,241 fail2ban.filter         [562]: INFO    [sshd] Found 119.27.189.190 - 2021-03-15 09:31:27
+2021-03-15 09:31:53,891 fail2ban.filter         [562]: INFO    [sshd] Found 159.203.59.19 - 2021-03-15 09:31:53
+2021-03-15 09:35:10,957 fail2ban.filter         [562]: INFO    [sshd] Found 165.227.204.47 - 2021-03-15 09:35:10
+2021-03-15 09:35:41,858 fail2ban.filter         [562]: INFO    [sshd] Found 45.146.165.72 - 2021-03-15 09:35:41
+2021-03-15 09:37:48,821 fail2ban.filter         [562]: INFO    [sshd] Found 182.254.151.2 - 2021-03-15 09:37:48
+2021-03-15 09:39:23,132 fail2ban.filter         [562]: INFO    [sshd] Found 140.238.177.83 - 2021-03-15 09:39:23
+2021-03-15 09:44:31,307 fail2ban.filter         [562]: INFO    [sshd] Found 181.30.99.114 - 2021-03-15 09:44:31
+2021-03-15 09:46:11,632 fail2ban.filter         [562]: INFO    [sshd] Found 45.146.165.72 - 2021-03-15 09:46:11
+2021-03-15 10:04:12,405 fail2ban.filter         [562]: INFO    [sshd] Found 45.155.205.211 - 2021-03-15 10:04:12
+2021-03-15 11:40:41,390 fail2ban.filter         [562]: INFO    [sshd] Found 181.188.186.158 - 2021-03-15 11:40:41
+2021-03-15 11:45:28,644 fail2ban.filter         [562]: INFO    [sshd] Found 49.233.32.245 - 2021-03-15 11:45:28
+2021-03-15 11:45:30,083 fail2ban.filter         [562]: INFO    [sshd] Found 128.199.16.236 - 2021-03-15 11:45:30
+2021-03-15 12:46:16,101 fail2ban.filter         [562]: INFO    [sshd] Found 188.166.98.23 - 2021-03-15 12:46:15
+2021-03-15 12:55:04,023 fail2ban.filter         [562]: INFO    [sshd] Found 107.173.209.238 - 2021-03-15 12:55:03
+2021-03-15 13:02:12,902 fail2ban.filter         [562]: INFO    [sshd] Found 159.203.73.181 - 2021-03-15 13:02:12
+2021-03-15 13:22:38,109 fail2ban.filter         [562]: INFO    [sshd] Found 203.66.168.81 - 2021-03-15 13:22:37
+2021-03-15 13:24:58,782 fail2ban.filter         [562]: INFO    [sshd] Found 47.92.83.209 - 2021-03-15 13:24:58
+2021-03-15 13:27:07,544 fail2ban.filter         [562]: INFO    [sshd] Found 104.236.0.114 - 2021-03-15 13:27:07
+2021-03-15 13:50:45,088 fail2ban.filter         [562]: INFO    [sshd] Found 84.42.96.48 - 2021-03-15 13:50:44
+2021-03-15 13:59:33,635 fail2ban.filter         [562]: INFO    [sshd] Found 159.75.38.169 - 2021-03-15 13:59:33
+2021-03-15 15:19:27,013 fail2ban.filter         [562]: INFO    [sshd] Found 89.252.140.11 - 2021-03-15 15:19:26
+2021-03-15 15:21:29,413 fail2ban.filter         [562]: INFO    [sshd] Found 140.249.204.230 - 2021-03-15 15:21:29
+2021-03-15 15:33:19,223 fail2ban.filter         [562]: INFO    [sshd] Found 210.112.232.6 - 2021-03-15 15:33:18
+2021-03-15 15:36:02,858 fail2ban.server         [562]: INFO    Shutdown in progress...
+2021-03-15 15:36:02,859 fail2ban.server         [562]: INFO    Stopping all jails
+2021-03-15 15:36:02,859 fail2ban.filter         [562]: INFO    Removed logfile: '/var/log/auth.log'
+2021-03-15 15:36:02,970 fail2ban.actions        [562]: NOTICE  [sshd] Flush ticket(s) with iptables-multiport
+2021-03-15 15:36:02,971 fail2ban.jail           [562]: INFO    Jail 'sshd' stopped
+2021-03-15 15:36:02,971 fail2ban.database       [562]: INFO    Connection to database closed.
+2021-03-15 15:36:02,972 fail2ban.server         [562]: INFO    Exiting Fail2ban

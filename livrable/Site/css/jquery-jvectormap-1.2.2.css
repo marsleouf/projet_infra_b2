@@ -193,3 +193,11 @@
 .img20 {
   max-width: 200px;
 }
+
+.colSize {
+  background-color: blue;
+  width: 80%;
+}
+.atackDanger {
+  background: red;
+}

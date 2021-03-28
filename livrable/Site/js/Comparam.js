@@ -12,37 +12,19 @@ function save() {
   console.log(id.dataset);
 
   if (id.dataset.leftbarCompactMode) {
-    if (id.dataset.leftbarCompactMode == "condensed") {
-      bar = "condensed";
-    } else if (id.dataset.leftbarCompactMode == "scrollable") {
-      bar = "scrollable";
-    } else {
-      bar = "fixed";
-    }
+    bar = id.dataset.leftbarCompactMode;
   }
   if (id.dataset.leftbarTheme) {
-    if (id.dataset.leftbarTheme == "dark") {
-      bar_theme = "dark";
-    } else if (id.dataset.leftbarTheme == "light") {
-      bar_theme = "light";
-    } else {
-      bar_theme = "defaut";
-    }
+    bar_theme = id.dataset.leftbarTheme;
+  } else {
+    bar_theme = "defaut";
   }
   if (id.dataset.boxed) {
-    if (id.dataset.boxed == "true") {
-      menu_decaler = 1;
-    } else if (id.dataset.boxed == "false") {
-      menu_decaler = 0;
-    } else {
-    }
+    console.log(id.dataset.boxed);
+    menu_decaler = id.dataset.boxed;
   }
   if (id.dataset.dark) {
-    if (id.dataset.dark == "true") {
-      darkmode = 1;
-    } else if (id.dataset.dark == "false") {
-      darkmode = 0;
-    }
+    darkmode = id.dataset.dark;
   }
 
   xhttp.open("POST", "/Dashbord/parametre_sql.php", true);
