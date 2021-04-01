@@ -40,7 +40,7 @@
                 // }else {
 
                 // }
-                var_dump($trf);
+                //var_dump($trf);
                 $query = $pdo->prepare('INSERT INTO `objet_co`(`liste_id_user`, `name`, `hostname`, `ip`, `port`, `fonctions`, `type`) VALUES ("1","'.$name.'","'.$trf['hostname'].'","'.$ip.'","'.$port.'",'.json_encode($objet_co).',"'.$type.'")');
                 $query->execute();
             } catch(\Throwable $th){
@@ -67,7 +67,7 @@
                                 }else{
                                     $dis1['id'] = $resBdd['id'];
                                     $dis1['data'] = null;
-                                    $dis1['error'] = "Ne peut pas étre Connecter.<strong> Velier vérifier la connexion</strong>";
+                                    $dis1['error'] = "Ne peut pas être connectée.<strong> Veuillez vérifier la connexion.</strong>";
                                     $disTotal[$resBdd['id']] = $dis1;
                                 }
                             } catch(\Throwable $th){

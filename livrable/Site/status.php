@@ -102,7 +102,7 @@ function sysCmd($cmd) {
                                             <tr>
                                                 <th>Jail</th>
                                                 <th>Ip </th>
-                                                <th>Time of Bann</th>
+                                                <th>Warning's Date</th>
                                                 <th>Data</th>
                                                 
                                             </tr>

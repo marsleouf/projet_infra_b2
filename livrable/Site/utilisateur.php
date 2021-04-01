@@ -93,7 +93,7 @@
                                                 <th>Nom </th>
                                                 <th>Prenom</th>
                                                 <th>Mail</th>
-                                                <th>Mdp</th>
+                                                
                                                 <th>type</th>
                                                 <th><i id='supp' class=''></i></th>
                                             </tr>
@@ -111,7 +111,6 @@
                                                             <td>". $value1['nom']."</td>
                                                             <td>". $value1['prenom']."</td>
                                                             <td>". $value1['mail']."</td>
-                                                            <td>".$value1['mdp']."</td>
                                                             <td>".$value1['type']."</td><td><button onclick='supp(".$value1['id_user'].")' class='col btn btn-light' style='width: 100px; height: 35px;'>Supp</button></td>";
                                                     };
                                                 ?>

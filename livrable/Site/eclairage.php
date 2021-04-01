@@ -1,51 +1,51 @@
 <?php
     include_once('models/user_model.php');
     include_once('config/pdo.php');
+    include('models/conSSH.php');
+
     session_start();
     if (!isset($_SESSION['isConnected'])){
         $_SESSION['isConnected'] = FALSE;
         header('Location: /Dashbord/connect/form_connex.html');
     }else if($_SESSION['isConnected']){
-
+   // $SSH = new conneSSH();
     $curr_user = $_SESSION['user'];
     $reponse_user = $pdo->query("SELECT * FROM users WHERE mail LIKE '$curr_user->mail'");
     $user = $reponse_user->fetch();
     $image = "/".substr($user['path_img'],16);
-
-  include('models/parametreshow.php');
-    }
-    
+   
+    include('models/parametreshow.php');
+    //ObjectAjout($pdo,"192.168.1.106","5000","Test","prise");
+    //$objres = ObjectCO($pdo,4,0,1);
+    //var_dump($objres[0]);
+    //$jsonobj = json_decode($objres[0]["fonctions"],true);
+    $objectResult = get_donner($pdo,"eclairage");
+   // die();
+}
+  
 ?>
  <!DOCTYPE html>
     <html lang="fr">
-
+    
     <head>
         <meta charset="utf-8" />
-        <title>Dashboard</title>
+        <title>Dashboard Eclairage</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <meta content="A fully featured admin theme which can be used to build CRM, CMS, etc." name="description" />
         <meta content="Coderthemes" name="author" />
+        <!-- App favicon -->
         <link rel="shortcut icon" href="images/favicon.ico">
-<!-- third party css end -->
-   <!-- App favicon -->
-  
-<!-- third party css -->
-<link href="css/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
-<!-- third party css end -->
 
-<!-- App css -->
+        <!-- third party css -->
+        <link href="css/jquery-jvectormap-1.2.2.css" rel="stylesheet" type="text/css" />
+        <!-- third party css end -->
 
-<link href="css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
-<link href="css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
+        <!-- App css -->
+        <link href="css/icons.min.css" rel="stylesheet" type="text/css" />
+         <link href="css/app.min.css" rel="stylesheet" type="text/css" id="light-style" />
+        <link href="css/app-dark.min.css" rel="stylesheet" type="text/css" id="dark-style" />
 
-<link href="css/batterie.css" rel="stylesheet" type="text/css" />
-<link href="css/temp.css" rel="stylesheet" type="text/css" />
-        
-       
-        
-  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
-  <script src="https://cdn.jsdelivr.net/npm/vue-apexcharts"></script>
+
     </head>
 <?php 
 
@@ -61,7 +61,6 @@
     }' data-dark="" data-boxed="<?php echo $Boxed ?>" data-leftbar=<?php echo $BarTheme ?>>
         <!-- Begin page -->
         <div class="wrapper">
-
             <!-- ========== Left Sidebar Start ========== -->
             <?php include('html/left-side-menu.php'); ?>
             <!-- Left Sidebar End -->
@@ -78,85 +77,56 @@
                     <div class="container-fluid">
 
                         <!-- start page title -->
+                     
                         <div class="row">
                             <div class="col-12">
                                 <div class="page-title-box">
-                                    <h4 class="page-title">Stocages et Production</h4>
+                                    <h4 class="page-title">Eclairage</h4>
                                 </div>
                             </div>
-
-                            <div class="col-xl-12 col-lg-6 order-lg-3">
-                                <div class="card">
-                                    <div class="card-body">
-
-                                        <div class="row">
-                                            <div class=" col-xl-11 col-lg-11 col-sm-11">
-                                                <div class="page-title-box">
-                                                    <h4 class="page-title">Batterie<span id="affiche"></span></h4>
-                                                </div>
-                                            </div>
-                                            <input value=3 class="form-control form-control-sm col-xl-1 col-lg-1 col-sm-1" type="number" max=60 min=0 id="NBse">
-                                        </div>
-                                        <div class="row" id="batt">
-                                            <!--<div class="col-xl-4 col-lg-6 order-lg-3">
-                                                <div class="card">
-                                                    <div class="card-body">
-                                                        <div class="progress progress-bar-vertical" style="width: 50%; ">
-                                                            <div class="progress-bar" style="height: 50%; background-color: rgb(0, 26, 255);"> 50 °C</div>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>-->
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="col-xl-12 col-lg-6 order-lg-3">
-                                <div class="card">
-                                    <div class="card-body">
-                                        <div class="row">
-                                            <div class="col-12">
-                                                <div class="page-title-box">
-                                                    <h4 class="page-title">Production</h4>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div class="row" id="prod">
-
-                                            <div class="col-xl-12 col-lg-6 order-lg-3">
-                                                <div class="card">
-                                                    <div class="card-body">
-
-                                                        <div class="row"><!--Titre-->
-                                                            <div class="col-12">
-                                                                <div class="page-title-box">
-                                                                    <h4 class="page-title">Groupe l'electrogene</h4>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="row">
-                                                            <img class="col-sm-3" src="images/unnamed.png"></img>
-                                                            <span class="col-sm-1"></span>
-                                                            <img class="col-sm-3" src="images/unnamed.png"></img>
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
                         </div>
+                        <div class="row">
+                           <?php
+                           foreach($objectResult as $valeur) { ?>
+                            <div class="card col-xl-12 col-lg-12 col-sm-12 order-lg-12"  >
+                                <div class="card-body">
+                                    <h5 class="card-title"><?php echo $valeur["name"] ?></h5> 
+                                <div class="col-xl-12 col-lg-12 col-sm-12" id="<?php echo $valeur["id"] ?>error">
+
+                                </div>
+                                    <div class="row col-xl-12 col-lg-12 col-sm-12">
+                                        <?php 
+                                            $jsonobj = json_decode($valeur["fonctions"],true);
+                                            //var_dump( $jsonobj);
+                                            foreach($jsonobj['action'] as $value) { ?>
+                                                <div class="card col-xl-3 col-lg-3 col-sm-5" >
+                                                    <div class="card-body">
+                                                        <h5 class="card-title"><?php echo $value["name"] ?><span class="badge badge-secondary"style="margin-left:20%;" id="<?php echo $valeur["id"].$value["name"] ?>">status</span></h5>
+                                                        <button onclick="javascript:btnprise(<?php echo $valeur['id'] ?>,<?php echo $value['id'] ?>,1);" class="btn btn-success col-xl-5 col-lg-5 col-sm-6" data-id="<?php echo $value["id"] ?>">ON</button>
+                                                        <button onclick="javascript:btnprise(<?php echo $valeur['id'] ?>,<?php echo $value['id'] ?>,0);" class="btn btn-danger col-xl-5 col-lg-5 col-sm-6" data-id="<?php echo $value["id"] ?>">OFF</button>
+                                                    </div>
+                                                </div>
+                                        <?php
+                                            } ?>
+                                    </div>
+                                </div>
+                            </div>
+                            <?php       
+                            }
+                            ?>
+                                    
+                                                           
+                                
+                        </div>     
+                        <!-- end row -->
+
                     </div>
                     <!-- container -->
                 </div>
                 <!-- content -->
 
                 <!-- Footer Start -->
-                <?php include('html/footer.php'); ?>
+               <?php include('html/footer.php'); ?>
                 <!-- end Footer -->
 
             </div>
@@ -169,18 +139,16 @@
         </div>
         <!-- END wrapper -->
 
-        <!-- Right Sidebar Parametre -->
         <?php include('html/right-bar.php'); ?>
 
-        <div class="rightbar-overlay"></div>
-        <!-- /Right-bar -->
+<div class="rightbar-overlay"></div>
+<!-- /Right-bar -->
+<script src="js/prise.js"></script>
+<?php include('html/comJs.php'); ?>
+<!-- third party js ends -->
 
-        <?php include('html/comJs.php'); ?>
-        
-        <script src="js/batterie.min.js"></script>
-        <script src="js/temp.min.js"></script>
-        <script src="js/batterie.js"></script>
-        <!-- third party js ends -->
+<!-- demo app -->
+
         <!-- end demo js-->
     </body>
 </html>

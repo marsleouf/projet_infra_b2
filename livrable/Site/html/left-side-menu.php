@@ -145,6 +145,9 @@ $MenuObjet = $query->fetchAll(PDO::FETCH_ASSOC);
                     <li>
                         <a href="/Dashbord/utilisateur.php"><img class="iconbarto" src="icons/add-user.svg"></img>Utilisateur</a>
                     </li>
+                    <li>
+                        <a href="/Dashbord/objet.php"><img class="iconbarto" src="icons/lightbulb.svg"></img>Object Connecter</a>
+                    </li>
                 </ul>
             </li>
             <?php }else{

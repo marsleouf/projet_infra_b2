@@ -512,7 +512,7 @@ include('models/parametreshow.php');
                                             <a href="javascript:void(0);" class="dropdown-item">Action</a>
                                         </div>
                                     </div>
-                                    <h4 class="header-title mb-3">Heur de Soleil </h4>
+                                    <h4 class="header-title mb-3">Heure(s) de Soleil </h4>
 
                                     <div id="high-performing-product" class="apex-charts" data-colors="#FF1414,#21C421"></div>
 
