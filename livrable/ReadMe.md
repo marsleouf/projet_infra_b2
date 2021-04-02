@@ -1,12 +1,12 @@
 # Installation du Projet
 
-- Les Pakages à installer :
+## Package to install :
 
   ```
   php-fpm php-mysql mysql-server nginx php-curl
   ```
 
-- La liste des Pakages PHP .
+## PHP packages list :
 
   ```
   [PHP Modules]
@@ -62,8 +62,11 @@
   zlib
   ```
 
-- Déplasser le dossier Site vars `/var/www/html/`.
--
+- Move website directory in `/var/www/html/`.
+
+## Certificate
+
+To succesfully access the website, you'll need to put `quentinguiheneuc.fr.crt` in your certificate library of your favorite browser. Once it's done, you can proceed the next steps.
 
 
 ## Nginx
@@ -347,3 +350,9 @@ Finally, if you want to ban an IP yourself, just type:
   fail2ban-client -vvv set JAIL banip WW.XX.YY.ZZ
   # where WW.XX.YY.ZZ is the IP that bothering you
 ```
+
+## Reverse proxy
+
+To see the configuration of the reverse proxy, please lead yourself [here](./proxy_params.md).
+
+After succesfully completed this step, you should be able to join the web server with the reverse proxy.

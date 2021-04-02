@@ -19,7 +19,7 @@ Durée approximative des boucles en millisecondes :
 
 Then we'll use a raspberry to act like a reverse proxy.
 
-Once we've installed **Nginx** on it, make sure the nginx.conf file lokk exactely the same to this:
+Once we've installed **Nginx** on it, make sure the nginx.conf file look exactely the same to this:
 
 ```sh
 user www-data;
@@ -126,6 +126,6 @@ server {
 }
 ```
 
-This is a basic configuration of a proxy serveur but at least, it works.
+Disclaimer: This is a very basic configuration of a proxy serveur and can be upgraded in many way, but at least, it works.
 
 To check it, go have a look on `quentinguiheneuc.fr:81`. This is the adress of the proxy server.
